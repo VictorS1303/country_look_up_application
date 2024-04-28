@@ -8,12 +8,20 @@
         font-family: inherit;
         margin-top: 30px;
         padding: 10px 15px;
-        width: 150px;
+        width: 300px;
         border-radius: calc(var(--base-border-radius) / 2);
         background-color: var(--select-input-background-color);
         font-size: var(--select-font-size);
         border: 2px solid #ccc;
         cursor: pointer;
+    }
+
+    @media screen and (min-width: 768px)
+    {
+        .region-filter
+        {
+            width: 150px;
+        }
     }
 </style>
 
