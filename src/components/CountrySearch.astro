@@ -1,0 +1,26 @@
+<div class="container search-input-container">
+    <input type="text" class="country-search-input" id="country_search_input" placeholder="Search for a country">
+</div>
+
+
+<style>
+    .container.search-input-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .container.search-input-container .country-search-input
+    {
+        font-family: inherit;
+        background-color: var(--search-input-background-color);
+        padding: 10px 15px;
+        border-radius: calc(var(--base-border-radius) / 2);
+        width: 300px;
+        border: 2px solid #ccc;
+        color: var(--primary-text-color);
+        font-size: var(--input-font-size);
+    }
+</style>

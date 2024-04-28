@@ -9,10 +9,14 @@
     --body-background-color: #fafafa;
     --card-background-color: #ffffff;
     --header-background-color: #ffffff;
+    --search-input-background-color: #ffffff;
 
     /* Dark Mode */
     --dark-mode-elements-background: #2b3945;
     --dark-mode-background-color: #202c37;
+
+    /* Radii */
+    --base-border-radius: 10px;
 
 
     /* FONT SIZES */

@@ -1,19 +1,22 @@
 ---
-import '../css/style.css';
-import Header from '../components/Header.astro';
-const {title} = Astro.props
+import "../css/style.css";
+import Header from "../components/Header.astro";
+import CountrySearch from "../components/CountrySearch.astro";
+const { title } = Astro.props;
 ---
 
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
-    <title>{title}</title>
-</head>
-<body>
-<Header />
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/e05f21b32e.js"
+            crossorigin="anonymous"></script>
+        <title>{title}</title>
+    </head>
+    <body>
+        <Header />
+        <CountrySearch />
+    </body>
 </html>
