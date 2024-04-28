@@ -1,0 +1,26 @@
+---
+import CountrySearch from "./CountrySearch.astro";
+---
+
+<div class="container country-search-and-region-filter-container">
+    <CountrySearch />
+</div>
+
+<style>
+    .country-search-and-region-filter-container
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px)
+    {
+        .country-search-and-region-filter-container
+        {
+            padding: 0 40px;
+            flex-direction: row;
+        }
+
+    }
+</style>
