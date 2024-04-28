@@ -1,1 +1,40 @@
 
+<select class="region-filter" id="region_filter"></select>
+
+
+<style>
+    .region-filter
+    {
+        font-family: inherit;
+        margin-top: 30px;
+        padding: 10px 15px;
+        width: 150px;
+        border-radius: calc(var(--base-border-radius) / 2);
+        background-color: var(--select-input-background-color);
+        font-size: var(--select-font-size);
+        border: 2px solid #ccc;
+        cursor: pointer;
+    }
+</style>
+
+
+<script>
+    const regions = ['Africa', 'America', 'Asia', 'Europe', 'Oceania']
+    const regionFilter = document.querySelector('#region_filter')
+
+
+    // Create Option Element
+    function createOptionElement()
+    {
+        for(let i = 0; i < regions.length; i++)
+        {
+            const optionElement = document.createElement('option')
+            optionElement.textContent = regions[i]
+            regionFilter.appendChild(optionElement)
+        }
+        
+    }
+
+    createOptionElement()
+
+</script>
