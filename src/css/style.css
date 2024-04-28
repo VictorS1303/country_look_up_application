@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+
+:root
+{
+
+    /* Light Mode (default) */
+    --primary-text-color: #111517;
+    --input-text-color: #858585;
+    --background-color: #fafafa;
+    --card-background-color: #ffffff;
+    --header-background-color: #ffffff;
+
+    /* Dark Mode */
+    --dark-mode-elements-background: #2b3945;
+    --dark-mode-background-color: #202c37;
+
+
+    /* FONT SIZES */
+
+    /* Landing Page */
+    --card-font-size: 14px;
+    --input-font-size: 14px;
+    --select-font-size: 14px;
+
+    /* Details Page */
+    --details-page-font-size: 16px;
+
+    /* Shadows */
+    --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+body
+{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img, svg
+{
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
