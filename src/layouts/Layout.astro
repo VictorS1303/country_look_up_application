@@ -1,10 +1,9 @@
 ---
-import "../css/style.css";
-import Header from "../components/Header.astro";
-import CountrySearchRegionFilterContainer from "../components/CountrySearchRegionFilterContainer.astro";
-// import CountrySearch from "../components/CountrySearch.astro";
-// import RegionFilter from "../components/RegionFilter.astro";
-const { title } = Astro.props;
+import "../css/style.css"
+import Header from "../components/Header.astro"
+import CountrySearchRegionFilterContainer from "../components/CountrySearchRegionFilterContainer.astro"
+import CountryCardContainer from '../components/CountryCardContainer.astro'
+const { title } = Astro.props
 ---
 
 <!doctype html>
@@ -20,5 +19,6 @@ const { title } = Astro.props;
     <body>
         <Header />
         <CountrySearchRegionFilterContainer />
+        <CountryCardContainer />
     </body>
 </html>

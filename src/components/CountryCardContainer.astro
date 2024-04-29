@@ -1,0 +1,22 @@
+---
+import Section from "./Section.astro";
+import CountryCard from "./CountryCard.astro";
+---
+
+<Section class="country-card-section" id="country_card_section">
+    <div class="container country-card-container">
+        <CountryCard class="country-card" id="country_card" />
+    </div>
+</Section>
+
+
+<style>
+    .container.country-card-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+</style>
