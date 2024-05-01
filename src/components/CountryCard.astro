@@ -1,35 +1,37 @@
 ---
+import CountryCardContainer from "./CountryCardContainer.astro";
 const { className, id } = Astro.props;
 ---
 
-<article class={className} id={id}>
-    <a href="#">
-        <header class="card-header">
-            <img src="src/images/flag_test_image.png" alt="" />
-        </header>
-        <div class="container card-info-container">
-            <h2 class="country-name" id="country_name">Ireland</h2>
-            <ul>
-                <li>
-                    <b>Population: </b>
-                    <span class="population" id="population">123,456</span>
-                </li>
-                <li>
-                    <b>Region: </b>
-                    <span class="region" id="region">Europe</span>
-                </li>
-                <li>
-                    <b>Capital: </b>
-                    <span class="capital" id="capital">Dublin</span>
-                </li>
-            </ul>
-        </div>
-    </a>
-</article>
+<CountryCardContainer>
+    <article class={className} id={id}>
+        <a href="#">
+            <header class="card-header">
+                <img src="src/images/flag_test_image.png" alt="" />
+            </header>
+            <div class="container card-info-container">
+                <h2 class="country-name" id="country_name">Ireland</h2>
+                <ul>
+                    <li>
+                        <b>Population: </b>
+                        <span class="population" id="population">123,456</span>
+                    </li>
+                    <li>
+                        <b>Region: </b>
+                        <span class="region" id="region">Europe</span>
+                    </li>
+                    <li>
+                        <b>Capital: </b>
+                        <span class="capital" id="capital">Dublin</span>
+                    </li>
+                </ul>
+            </div>
+        </a>
+    </article>
+</CountryCardContainer>
 
 <style>
-    article
-    {
+    article {
         height: 340px;
         width: 250px;
         background-color: var(--card-background-color);
@@ -37,38 +39,36 @@ const { className, id } = Astro.props;
         box-shadow: var(--box-shadow);
     }
 
-    article .container.card-info-container
-    {
+    article .container.card-info-container {
         margin-top: 30px;
     }
 
-    article img
-    {
+    article img {
         border-radius: var(--base-border-radius) var(--base-border-radius) 0 0;
     }
 
-    article a
-    {
+    article a {
         color: var(--primary-text-color);
     }
 
-    article h2
-    {
+    article h2 {
         margin-bottom: 20px;
     }
 
-    article ul
-    {
+    article ul {
         margin-left: 20px;
     }
 
-    article ul li
-    {
+    article ul li {
         display: flex;
         margin-bottom: 10px;
     }
-    article ul li b
-    {
+    article ul li b {
         margin-right: 5px;
     }
 </style>
+<!-- 
+<script>
+    const API_URL =
+        "https://restcountries.com/v3.1/all?fields=name,population,region,capital,flags";
+</script> -->
